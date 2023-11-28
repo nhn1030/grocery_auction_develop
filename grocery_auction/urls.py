@@ -17,11 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 
-from . import views
+from market import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.test, name='test')
-
-    
+    url(r'^$', views.test_view, name='test')
 ]
