@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import path, include
 from django.conf.urls import url
+from estimate import views
 
 from market import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.test, name='test')
+    path('', views.test, name='test'),
+    path('estimate/', include('estimate.urls')),  # estimate 앱의 URL 패턴 포함
 ]
