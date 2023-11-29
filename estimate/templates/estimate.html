@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>농산물 경매의 시작, fresh 2 door</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    {% load static %}  <!-- 정적 파일을 사용하기 위해 추가 -->
+    <link rel="icon" href="{% static 'img/favicon.png' %}" sizes="16x16 32x32" type="img/png">
+    <link rel="stylesheet" href="{% load static %}{% static 'css/sidebar.css' %}">
+</head>
+<body>
+    
+    <!-- Include the sidebar template -->
+    {% include 'nav_class.html' %}
+    {% include 'estimate_sidebar.html' %}
+    
+    <!-- Other content of the estimate page -->
+</body>
+</html>
