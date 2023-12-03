@@ -41,3 +41,17 @@ confirmTab.addEventListener("click", function() {
 
 // 페이지 로드 시 초기 탭 설정
 setActiveTab(productsTab);
+
+
+function showTab(tabId) {
+    var tabContents = document.querySelectorAll('.tab-content');
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+    }
+
+    // 선택한 탭의 내용을 보여줍니다.
+    var selectedTabContent = document.getElementById(tabId);
+    if (selectedTabContent) {
+        selectedTabContent.style.display = 'block';
+    }   
+}
