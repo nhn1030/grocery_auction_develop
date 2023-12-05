@@ -90,3 +90,6 @@ db.sqlite3
 
 /workspace/grocery_auction/estimate/__pycache__
 /workspace/grocery_auction/estimate/migrations
+
+/workspace/grocery_auction/accounts/migrations
+/workspace/grocery_auction/accounts/__init__.py
